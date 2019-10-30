@@ -1,0 +1,19 @@
+<table class="table table-striped" id="tabela">
+  <thead>
+   <tr>
+    <th scope="col">MARCA</th>
+    <th scope="col">MODELO</th>
+    <th scope="col">VALOR</th>
+  </tr>
+ </thead>
+  <tbody>
+   <tr *ngFor="let veiculo of s.lista"> 
+    <td>{{veiculo.marca}}</td>
+    <td>{{veiculo.modelo}}</td>
+    <td>{{veiculo.valor | currency:'BRL'}}</td>
+  </tr>
+  </tbody>
+ </table>
+ <div style="text-align:right;">Total: {{s.count}}</div>
+
+  
